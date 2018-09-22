@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/nett"
+    android:padding="5dp"
+    tools:context=".NoteActivity">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/note_et_title"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="Note Title"
+            android:textSize="20sp"
+            android:autoSizeTextType="uniform"
+            android:textColor="#216132"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColorHint="#601f70"
+            android:maxLines="1"
+            android:cursorVisible="true"
+            android:singleLine="true"
+            android:backgroundTint="#846b4c"/>
+
+        <EditText
+            android:id="@+id/note_et_content"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:textColor="#000000"
+            android:textColorHint="#37AEF0"
+            android:padding="10dp"
+            android:hint="please type your note's....!"
+            android:gravity="top"
+            android:cursorVisible="true"
+            android:singleLine="true"
+            android:backgroundTint="#FFFFFF"
+            />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+    <!--speach to activity try -->
+    <ImageView
+        android:id="@+id/buttonspeach_id"
+        android:layout_width="57dp"
+        android:layout_height="61dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="left"
+        android:layout_marginEnd="12dp"
+        android:drawableRight="@drawable/spekk"
+        android:onClick=" buttonSpeach"
+        android:src="@drawable/speakbest" />
+
+
+
+    <TextView
+        android:id="@+id/txvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textColor="#000"
+        android:textSize="26sp"
+        android:textStyle="normal"/>
+
+
+    <ImageView
+        android:id="@+id/btnSpeak"
+        android:layout_width="69dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="28dp"
+        android:gravity="center"
+        android:onClick="getSpeechInput"
+        android:src="@drawable/ic_mic" />
+
+
+</RelativeLayout>

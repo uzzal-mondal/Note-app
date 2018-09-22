@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_note_title"
+        android:text="title"
+        android:textAllCaps="true"
+        android:layout_margin="5dp"
+        android:textColor="#FF4081"
+        android:textSize="22sp"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_note_date"
+        android:text="  19/08/2018"
+        android:textColor="#000000"
+        android:padding="3dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_note_content"
+        android:text="This is preview!"
+        android:layout_margin="5dp"
+        android:textColor="#14304e"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+</LinearLayout>
